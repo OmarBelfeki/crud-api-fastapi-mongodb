@@ -5,7 +5,7 @@ from routes import router as book_router
 
 app = FastAPI()
 config = dotenv_values(".env")
-
+  
 
 @app.on_event("startup")
 def startup_db_client():
